@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+body {
+	margin: 20px;
+	background-color: #f4f4f4;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+fieldset {
+	margin-bottom: 20px;
+	border: none;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+table {
+	width: 100%;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"],
+	textarea, input[type="file"], select {
+	width: calc(100% - 18px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"], button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+}
+
+input[type="reset"], button {
+	background-color: #ccc;
+	color: #000;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 20px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+#checkId {
+	float: right;
+	font-size: 0.8em;
+	color: red; /* Invalid 상태에서 빨간색으로 가정 */
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>로그인</h1>
+	</header>
+
+	<form action="" method="POST">
+
+		<th>*ID:</th>
+		<td><input type="text" name="userId" id="userId" class="userId" size="30" placeholder="아이디10글자이내" required></td>
+		<td><font id="checkId" size="2" style="float: right;"></font></td>
+		</tr>
+
+		<tr>
+			<th>*비밀번호</th>
+			<td colspan="2"><input type="password" name="userPwd1" id="userPwd1" size="30" placeholder="영문,숫자,특수문자포함8글자이상" required></td>
+			<br>
+			<input type="submit" value="로그인">
+			<input type="reset" value="다시입력">
+			<button type="button">이전으로</button>
+			<br>
+	</form>
+
+</body>
+</html>
